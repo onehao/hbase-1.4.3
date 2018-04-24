@@ -52,4 +52,8 @@
     <name>hbase.zookeeper.property.dataDir</name>
     <value>/home/onehao/soft/zookeeper-3.4.10</value>
   </property>
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
 </configuration>
