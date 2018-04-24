@@ -26,10 +26,6 @@
     <value>file:///home/onehao/soft/hbase-1.4.3</value>
   </property>
   <property>
-    <name>hbase.zookeeper.property.dataDir</name>
-    <value>/home/onehao/soft/zookeeper-3.4.10</value>
-  </property>
-  <property>
     <name>hbase.unsafe.stream.capability.enforce</name>
     <value>true</value>
     <description>
@@ -50,7 +46,7 @@
   </property>
    <property>
     <name>hbase.zookeeper.quorum</name>
-    <value>onehaohdd,onehaohh</value>
+    <value>onehaohdd,onehaohh,test</value>
   </property>
   <property>
     <name>hbase.zookeeper.property.dataDir</name>
