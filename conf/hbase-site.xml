@@ -31,7 +31,7 @@
   </property>
   <property>
     <name>hbase.unsafe.stream.capability.enforce</name>
-    <value>false</value>
+    <value>true</value>
     <description>
       Controls whether HBase will check for stream capabilities (hflush/hsync).
 
@@ -44,4 +44,8 @@
       likely not a false positive.
     </description>
   </property>
+  <property>
+  <name>hbase.rootdir</name>
+  <value>hdfs://localhost:9000/hbase</value>
+</property>
 </configuration>
