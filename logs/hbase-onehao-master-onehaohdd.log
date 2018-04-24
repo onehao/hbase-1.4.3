@@ -1,0 +1,289 @@
+2018年 04月 24日 星期二 10:37:49 CST Starting master on onehaohdd
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 60844
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 60844
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+2018-04-24 10:37:51,299 INFO  [main] util.VersionInfo: HBase 1.4.3
+2018-04-24 10:37:51,301 INFO  [main] util.VersionInfo: Source code repository git://apurtell-ltm4.internal.salesforce.com/Users/apurtell/src/hbase revision=172373d1f02bbe0e3da37ec25efc97d0ec69fc96
+2018-04-24 10:37:51,301 INFO  [main] util.VersionInfo: Compiled by apurtell on Wed Mar 21 17:21:52 PDT 2018
+2018-04-24 10:37:51,301 INFO  [main] util.VersionInfo: From source with checksum ec96e4aaf6fb55cc7189dfc1ab6ed5bc
+2018-04-24 10:37:52,281 INFO  [main] master.HMasterCommandLine: Starting a zookeeper cluster
+2018-04-24 10:37:52,333 INFO  [main] server.ZooKeeperServer: Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2018-04-24 10:37:52,333 INFO  [main] server.ZooKeeperServer: Server environment:host.name=onehaohdd
+2018-04-24 10:37:52,333 INFO  [main] server.ZooKeeperServer: Server environment:java.version=1.8.0_121
+2018-04-24 10:37:52,333 INFO  [main] server.ZooKeeperServer: Server environment:java.vendor=Oracle Corporation
+2018-04-24 10:37:52,333 INFO  [main] server.ZooKeeperServer: Server environment:java.home=/home/onehao/soft/jdk1.8.0_121/jre
+2018-04-24 10:37:52,333 INFO  [main] server.ZooKeeperServer: /home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.5-tests.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/contrib/capacity-scheduler/*.jar
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:java.library.path=/home/onehao/soft/hadoop-2.7.5/lib/native
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:java.compiler=<NA>
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:os.name=Linux
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:os.arch=amd64
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:os.version=3.13.0-143-generic
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:user.name=onehao
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:user.home=/home/onehao
+2018-04-24 10:37:52,334 INFO  [main] server.ZooKeeperServer: Server environment:user.dir=/home/onehao/soft/hbase-1.4.3
+2018-04-24 10:37:52,364 INFO  [main] server.ZooKeeperServer: Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /home/onehao/soft/zookeeper-3.4.10/zookeeper_0/version-2 snapdir /home/onehao/soft/zookeeper-3.4.10/zookeeper_0/version-2
+2018-04-24 10:37:52,364 INFO  [main] server.ZooKeeperServer: minSessionTimeout set to -1
+2018-04-24 10:37:52,364 INFO  [main] server.ZooKeeperServer: maxSessionTimeout set to -1
+2018-04-24 10:37:52,389 INFO  [main] server.NIOServerCnxnFactory: binding to port 0.0.0.0/0.0.0.0:2181
+2018-04-24 10:37:52,589 ERROR [main] server.ZooKeeperServer: ZKShutdownHandler is not registered, so ZooKeeper server won't take any action on ERROR or SHUTDOWN server state changes
+2018-04-24 10:37:52,601 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53446
+2018-04-24 10:37:52,634 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ServerCnxn: The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2018-04-24 10:37:52,635 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ServerCnxn: The list of enabled four letter word commands is : [[wchs, stat, stmk, conf, ruok, mntr, srvr, envi, srst, isro, dump, gtmk, crst, cons]]
+2018-04-24 10:37:52,635 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxn: Processing stat command from /127.0.0.1:53446
+2018-04-24 10:37:52,640 INFO  [Thread-2] server.NIOServerCnxn: Stat command output
+2018-04-24 10:37:52,642 INFO  [Thread-2] server.NIOServerCnxn: Closed socket connection for client /127.0.0.1:53446 (no session established for client)
+2018-04-24 10:37:52,642 INFO  [main] zookeeper.MiniZooKeeperCluster: Started MiniZooKeeperCluster and ran successful 'stat' on client port=2181
+2018-04-24 10:37:52,642 INFO  [main] master.HMasterCommandLine: Starting up instance of localHBaseCluster; master=1, regionserversCount=1
+2018-04-24 10:37:53,671 INFO  [main] regionserver.RSRpcServices: master/onehaohdd/127.0.1.1:0 server-side HConnection retries=350
+2018-04-24 10:37:54,033 INFO  [main] ipc.RpcExecutor: RpcExecutor  name  using fifo as call queue; numCallQueues=3; maxQueueLength=300; handlerCount=30
+2018-04-24 10:37:54,037 INFO  [main] ipc.RpcExecutor: RpcExecutor  name  using fifo as call queue; numCallQueues=2; maxQueueLength=300; handlerCount=20
+2018-04-24 10:37:54,038 INFO  [main] ipc.RpcExecutor: RpcExecutor  name  using fifo as call queue; numCallQueues=1; maxQueueLength=300; handlerCount=3
+2018-04-24 10:37:54,056 INFO  [main] ipc.RpcServer: master/onehaohdd/127.0.1.1:0: started 10 reader(s) listening on port=34758
+2018-04-24 10:37:54,361 INFO  [main] metrics.MetricRegistries: Loaded MetricRegistries class org.apache.hadoop.hbase.metrics.impl.MetricRegistriesImpl
+2018-04-24 10:37:55,393 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=master:34758 connecting to ZooKeeper ensemble=localhost:2181
+2018-04-24 10:37:55,404 INFO  [main] zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2018-04-24 10:37:55,404 INFO  [main] zookeeper.ZooKeeper: Client environment:host.name=onehaohdd
+2018-04-24 10:37:55,404 INFO  [main] zookeeper.ZooKeeper: Client environment:java.version=1.8.0_121
+2018-04-24 10:37:55,404 INFO  [main] zookeeper.ZooKeeper: Client environment:java.vendor=Oracle Corporation
+2018-04-24 10:37:55,404 INFO  [main] zookeeper.ZooKeeper: Client environment:java.home=/home/onehao/soft/jdk1.8.0_121/jre
+2018-04-24 10:37:55,404 INFO  [main] zookeeper.ZooKeeper: /home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.5-tests.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.7.5.jar:/home/onehao/soft/hadoop-2.7.5/contrib/capacity-scheduler/*.jar
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:java.library.path=/home/onehao/soft/hadoop-2.7.5/lib/native
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:os.name=Linux
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:os.arch=amd64
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:os.version=3.13.0-143-generic
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:user.name=onehao
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:user.home=/home/onehao
+2018-04-24 10:37:55,405 INFO  [main] zookeeper.ZooKeeper: Client environment:user.dir=/home/onehao/soft/hbase-1.4.3
+2018-04-24 10:37:55,407 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@7a8fa663
+2018-04-24 10:37:55,438 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-04-24 10:37:55,440 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53447
+2018-04-24 10:37:55,440 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-04-24 10:37:55,449 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53447
+2018-04-24 10:37:55,456 INFO  [SyncThread:0] persistence.FileTxnLog: Creating new log file: log.1
+2018-04-24 10:37:55,521 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x162f583b5950000 with negotiated timeout 10000 for client /127.0.0.1:53447
+2018-04-24 10:37:55,521 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x162f583b5950000, negotiated timeout = 10000
+2018-04-24 10:37:55,729 INFO  [RpcServer.listener,port=34758] ipc.RpcServer: RpcServer.listener,port=34758: starting
+2018-04-24 10:37:55,729 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: starting
+2018-04-24 10:37:55,863 INFO  [main] mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2018-04-24 10:37:55,872 INFO  [main] http.HttpRequestLog: Http request log for http.requests.master is not defined
+2018-04-24 10:37:55,898 INFO  [main] http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter)
+2018-04-24 10:37:55,900 INFO  [main] http.HttpServer: Added global filter 'clickjackingprevention' (class=org.apache.hadoop.hbase.http.ClickjackingPreventionFilter)
+2018-04-24 10:37:55,904 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context master
+2018-04-24 10:37:55,905 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2018-04-24 10:37:55,905 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2018-04-24 10:37:55,956 INFO  [main] http.HttpServer: Jetty bound to port 41868
+2018-04-24 10:37:55,956 INFO  [main] mortbay.log: jetty-6.1.26
+2018-04-24 10:37:56,822 INFO  [main] mortbay.log: Started SelectChannelConnector@0.0.0.0:41868
+2018-04-24 10:37:56,848 INFO  [main] master.HMaster: hbase.rootdir=file:/home/onehao/soft/hbase-1.4.3, hbase.cluster.distributed=false
+2018-04-24 10:37:56,878 INFO  [main] mortbay.log: jetty-6.1.26
+2018-04-24 10:37:56,880 INFO  [main] mortbay.log: Started SelectChannelConnector@0.0.0.0:41362
+2018-04-24 10:37:56,880 INFO  [main] master.HMaster: Adding backup master ZNode /hbase/backup-masters/onehaohdd,34758,1524537472902
+2018-04-24 10:37:57,192 INFO  [main] regionserver.RSRpcServices: regionserver/onehaohdd/127.0.1.1:0 server-side HConnection retries=350
+2018-04-24 10:37:57,193 INFO  [main] ipc.RpcExecutor: RpcExecutor  name  using fifo as call queue; numCallQueues=3; maxQueueLength=300; handlerCount=30
+2018-04-24 10:37:57,193 INFO  [main] ipc.RpcExecutor: RpcExecutor  name  using fifo as call queue; numCallQueues=2; maxQueueLength=300; handlerCount=20
+2018-04-24 10:37:57,193 INFO  [main] ipc.RpcExecutor: RpcExecutor  name  using fifo as call queue; numCallQueues=1; maxQueueLength=300; handlerCount=3
+2018-04-24 10:37:57,216 INFO  [main] ipc.RpcServer: regionserver/onehaohdd/127.0.1.1:0: started 10 reader(s) listening on port=35038
+2018-04-24 10:37:57,224 INFO  [main] zookeeper.RecoverableZooKeeper: Process identifier=regionserver:35038 connecting to ZooKeeper ensemble=localhost:2181
+2018-04-24 10:37:57,224 INFO  [main] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@b09fac1
+2018-04-24 10:37:57,231 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-04-24 10:37:57,236 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53448
+2018-04-24 10:37:57,238 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-04-24 10:37:57,245 INFO  [onehaohdd:34758.activeMasterManager] master.ActiveMasterManager: Deleting ZNode for /hbase/backup-masters/onehaohdd,34758,1524537472902 from backup master directory
+2018-04-24 10:37:57,246 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53448
+2018-04-24 10:37:57,261 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x162f583b5950001 with negotiated timeout 10000 for client /127.0.0.1:53448
+2018-04-24 10:37:57,262 INFO  [main-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x162f583b5950001, negotiated timeout = 10000
+2018-04-24 10:37:57,275 INFO  [onehaohdd:34758.activeMasterManager] master.ActiveMasterManager: Registered Active Master=onehaohdd,34758,1524537472902
+2018-04-24 10:37:57,278 INFO  [RpcServer.responder] ipc.RpcServer: RpcServer.responder: starting
+2018-04-24 10:37:57,278 INFO  [RpcServer.listener,port=35038] ipc.RpcServer: RpcServer.listener,port=35038: starting
+2018-04-24 10:37:57,302 INFO  [main] http.HttpRequestLog: Http request log for http.requests.regionserver is not defined
+2018-04-24 10:37:57,303 INFO  [main] http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.hbase.http.HttpServer$QuotingInputFilter)
+2018-04-24 10:37:57,304 INFO  [main] http.HttpServer: Added global filter 'clickjackingprevention' (class=org.apache.hadoop.hbase.http.ClickjackingPreventionFilter)
+2018-04-24 10:37:57,306 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context regionserver
+2018-04-24 10:37:57,307 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2018-04-24 10:37:57,307 INFO  [main] http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.hbase.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2018-04-24 10:37:57,312 INFO  [main] http.HttpServer: Jetty bound to port 45757
+2018-04-24 10:37:57,313 INFO  [main] mortbay.log: jetty-6.1.26
+2018-04-24 10:37:57,526 INFO  [onehaohdd:34758.activeMasterManager] util.FSUtils: Created version file at file:/home/onehao/soft/hbase-1.4.3 with version=8
+2018-04-24 10:37:57,568 INFO  [onehaohdd:34758.activeMasterManager] master.MasterFileSystem: BOOTSTRAP: creating hbase:meta region
+2018-04-24 10:37:57,575 INFO  [onehaohdd:34758.activeMasterManager] regionserver.HRegion: creating HRegion hbase:meta HTD == 'hbase:meta', {TABLE_ATTRIBUTES => {IS_META => 'true', coprocessor$1 => '|org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint|536870911|'}, {NAME => 'info', BLOOMFILTER => 'NONE', VERSIONS => '3', IN_MEMORY => 'false', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', CACHE_DATA_IN_L1 => 'true', MIN_VERSIONS => '0', BLOCKCACHE => 'false', BLOCKSIZE => '8192', REPLICATION_SCOPE => '0'} RootDir = file:/home/onehao/soft/hbase-1.4.3 Table name == hbase:meta
+2018-04-24 10:37:57,694 INFO  [main] mortbay.log: Started SelectChannelConnector@0.0.0.0:45757
+2018-04-24 10:37:57,836 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Allocating LruBlockCache size=773.90 MB, blockSize=64 KB
+2018-04-24 10:37:57,877 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for info: blockCache=LruBlockCache{blockCount=0, currentSize=595360, freeSize=810897632, maxSize=811492992, heapSize=595360, minSize=770918336, minFactor=0.95, multiSize=385459168, multiFactor=0.5, singleSize=192729584, singleFactor=0.25}, cacheDataOnRead=false, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2018-04-24 10:37:57,895 INFO  [RS:0;onehaohdd:35038] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x36a43e7a connecting to ZooKeeper ensemble=localhost:2181
+2018-04-24 10:37:57,899 INFO  [RS:0;onehaohdd:35038] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@3d937950
+2018-04-24 10:37:57,903 INFO  [M:0;onehaohdd:34758] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0xe66c8d5 connecting to ZooKeeper ensemble=localhost:2181
+2018-04-24 10:37:57,903 INFO  [M:0;onehaohdd:34758] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@4a34218
+2018-04-24 10:37:57,915 INFO  [RS:0;onehaohdd:35038-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-04-24 10:37:57,916 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53449
+2018-04-24 10:37:57,916 INFO  [M:0;onehaohdd:34758-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-04-24 10:37:57,917 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53450
+2018-04-24 10:37:57,921 INFO  [M:0;onehaohdd:34758-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-04-24 10:37:57,921 INFO  [RS:0;onehaohdd:35038-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-04-24 10:37:57,922 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53450
+2018-04-24 10:37:57,924 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53449
+2018-04-24 10:37:57,931 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2018-04-24 10:37:57,948 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x162f583b5950002 with negotiated timeout 10000 for client /127.0.0.1:53450
+2018-04-24 10:37:57,948 INFO  [M:0;onehaohdd:34758-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x162f583b5950002, negotiated timeout = 10000
+2018-04-24 10:37:57,959 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x162f583b5950003 with negotiated timeout 10000 for client /127.0.0.1:53449
+2018-04-24 10:37:57,959 INFO  [M:0;onehaohdd:34758] client.ZooKeeperRegistry: ClusterId read in ZooKeeper is null
+2018-04-24 10:37:57,960 INFO  [RS:0;onehaohdd:35038-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x162f583b5950003, negotiated timeout = 10000
+2018-04-24 10:37:57,968 INFO  [RS:0;onehaohdd:35038] client.ZooKeeperRegistry: ClusterId read in ZooKeeper is null
+2018-04-24 10:37:58,018 INFO  [onehaohdd:34758.activeMasterManager] regionserver.HRegion: Onlined 1588230740; next sequenceid=2
+2018-04-24 10:37:58,023 INFO  [StoreCloserThread-hbase:meta,,1.1588230740-1] regionserver.HStore: Closed info
+2018-04-24 10:37:58,023 INFO  [onehaohdd:34758.activeMasterManager] regionserver.HRegion: Closed hbase:meta,,1.1588230740
+2018-04-24 10:37:58,115 INFO  [onehaohdd:34758.activeMasterManager] coordination.SplitLogManagerCoordination: Found 0 orphan tasks and 0 rescan nodes
+2018-04-24 10:37:58,175 INFO  [onehaohdd:34758.activeMasterManager] zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x3507bf1d connecting to ZooKeeper ensemble=localhost:2181
+2018-04-24 10:37:58,175 INFO  [onehaohdd:34758.activeMasterManager] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@71bac562
+2018-04-24 10:37:58,187 INFO  [onehaohdd:34758.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-04-24 10:37:58,190 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53451
+2018-04-24 10:37:58,191 INFO  [onehaohdd:34758.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-04-24 10:37:58,196 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53451
+2018-04-24 10:37:58,202 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x162f583b5950004 with negotiated timeout 10000 for client /127.0.0.1:53451
+2018-04-24 10:37:58,203 INFO  [onehaohdd:34758.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x162f583b5950004, negotiated timeout = 10000
+2018-04-24 10:37:58,312 INFO  [onehaohdd:34758.activeMasterManager] balancer.StochasticLoadBalancer: loading config
+2018-04-24 10:37:58,493 INFO  [RS:0;onehaohdd:35038] regionserver.HRegionServer: ClusterId : 3f50475d-1332-4441-9908-eaa0401a7a57
+2018-04-24 10:37:58,494 INFO  [M:0;onehaohdd:34758] regionserver.HRegionServer: ClusterId : 3f50475d-1332-4441-9908-eaa0401a7a57
+2018-04-24 10:37:58,494 INFO  [onehaohdd:34758.activeMasterManager] master.HMaster: Server active/primary master=onehaohdd,34758,1524537472902, sessionid=0x162f583b5950000, setting cluster-up flag (Was=false)
+2018-04-24 10:37:58,519 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950001 type:create cxid:0x7 zxid:0x16 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc Error:KeeperErrorCode = NoNode for /hbase/flush-table-proc
+2018-04-24 10:37:58,529 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x34 zxid:0x17 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc Error:KeeperErrorCode = NoNode for /hbase/flush-table-proc
+2018-04-24 10:37:58,548 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x35 zxid:0x19 txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc
+2018-04-24 10:37:58,569 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x36 zxid:0x1b txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc/acquired Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc/acquired
+2018-04-24 10:37:58,605 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x39 zxid:0x1e txntype:-1 reqpath:n/a Error Path:/hbase/flush-table-proc/abort Error:KeeperErrorCode = NodeExists for /hbase/flush-table-proc/abort
+2018-04-24 10:37:58,616 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950001 type:create cxid:0xe zxid:0x1f txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot Error:KeeperErrorCode = NoNode for /hbase/online-snapshot
+2018-04-24 10:37:58,623 INFO  [onehaohdd:34758.activeMasterManager] procedure.ZKProcedureUtil: Clearing all procedure znodes: /hbase/flush-table-proc/acquired /hbase/flush-table-proc/reached /hbase/flush-table-proc/abort
+2018-04-24 10:37:58,662 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x3d zxid:0x23 txntype:-1 reqpath:n/a Error Path:/hbase/online-snapshot/acquired Error:KeeperErrorCode = NodeExists for /hbase/online-snapshot/acquired
+2018-04-24 10:37:58,689 INFO  [onehaohdd:34758.activeMasterManager] procedure.ZKProcedureUtil: Clearing all procedure znodes: /hbase/online-snapshot/acquired /hbase/online-snapshot/reached /hbase/online-snapshot/abort
+2018-04-24 10:37:58,713 INFO  [RS:0;onehaohdd:35038] regionserver.MemStoreFlusher: globalMemStoreLimit=773.9 M, globalMemStoreLimitLowMark=735.2 M, maxHeap=1.9 G
+2018-04-24 10:37:58,732 INFO  [RS:0;onehaohdd:35038] regionserver.HRegionServer: CompactionChecker runs every 10sec
+2018-04-24 10:37:58,779 INFO  [RS:0;onehaohdd:35038] regionserver.RegionServerCoprocessorHost: System coprocessor loading is enabled
+2018-04-24 10:37:58,779 INFO  [RS:0;onehaohdd:35038] regionserver.RegionServerCoprocessorHost: Table coprocessor loading is enabled
+2018-04-24 10:37:58,785 INFO  [RS:0;onehaohdd:35038] regionserver.HRegionServer: reportForDuty to master=onehaohdd,34758,1524537472902 with port=35038, startcode=1524537477191
+2018-04-24 10:37:58,829 INFO  [onehaohdd:34758.activeMasterManager] master.MasterCoprocessorHost: System coprocessor loading is enabled
+2018-04-24 10:37:58,877 INFO  [onehaohdd:34758.activeMasterManager] procedure2.ProcedureExecutor: Starting procedure executor threads=5
+2018-04-24 10:37:58,879 INFO  [onehaohdd:34758.activeMasterManager] wal.WALProcedureStore: Starting WAL Procedure Store lease recovery
+2018-04-24 10:37:58,880 WARN  [onehaohdd:34758.activeMasterManager] wal.WALProcedureStore: Log directory not found: File file:/home/onehao/soft/hbase-1.4.3/MasterProcWALs does not exist
+2018-04-24 10:37:58,895 INFO  [onehaohdd:34758.activeMasterManager] wal.WALProcedureStore: Lease acquired for flushLogId: 1
+2018-04-24 10:37:58,937 INFO  [onehaohdd:34758.activeMasterManager] zookeeper.RecoverableZooKeeper: Process identifier=replicationLogCleaner connecting to ZooKeeper ensemble=localhost:2181
+2018-04-24 10:37:58,938 INFO  [onehaohdd:34758.activeMasterManager] zookeeper.ZooKeeper: Initiating client connection, connectString=localhost:2181 sessionTimeout=10000 watcher=org.apache.hadoop.hbase.zookeeper.PendingWatcher@6a942511
+2018-04-24 10:37:58,947 INFO  [onehaohdd:34758.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-04-24 10:37:58,948 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.NIOServerCnxnFactory: Accepted socket connection from /127.0.0.1:53452
+2018-04-24 10:37:58,948 INFO  [onehaohdd:34758.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Socket connection established to localhost/127.0.0.1:2181, initiating session
+2018-04-24 10:37:58,951 INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181] server.ZooKeeperServer: Client attempting to establish new session at /127.0.0.1:53452
+2018-04-24 10:37:58,966 INFO  [SyncThread:0] server.ZooKeeperServer: Established session 0x162f583b5950005 with negotiated timeout 10000 for client /127.0.0.1:53452
+2018-04-24 10:37:58,966 INFO  [onehaohdd:34758.activeMasterManager-SendThread(localhost:2181)] zookeeper.ClientCnxn: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x162f583b5950005, negotiated timeout = 10000
+2018-04-24 10:37:58,976 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950005 type:create cxid:0x2 zxid:0x26 txntype:-1 reqpath:n/a Error Path:/hbase/replication Error:KeeperErrorCode = NoNode for /hbase/replication
+2018-04-24 10:37:59,047 INFO  [onehaohdd:34758.activeMasterManager] master.ServerManager: Waiting on RegionServer count=0 to settle; waited=0ms, expecting min=1 server(s), max=NO_LIMIT server(s), timeout=4500ms, lastChange=0ms
+2018-04-24 10:37:59,313 INFO  [RpcServer.default.FPBQ.Fifo.handler=29,queue=2,port=34758] master.ServerManager: Registering server=onehaohdd,35038,1524537477191
+2018-04-24 10:37:59,348 INFO  [onehaohdd:34758.activeMasterManager] master.ServerManager: Waiting on RegionServer count=1 to settle; waited=301ms, expecting min=1 server(s), max=NO_LIMIT server(s), timeout=4500ms, lastChange=0ms
+2018-04-24 10:37:59,392 INFO  [RS:0;onehaohdd:35038] hfile.CacheConfig: Created cacheConfig: blockCache=LruBlockCache{blockCount=0, currentSize=595360, freeSize=810897632, maxSize=811492992, heapSize=595360, minSize=770918336, minFactor=0.95, multiSize=385459168, multiFactor=0.5, singleSize=192729584, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2018-04-24 10:37:59,484 INFO  [RS:0;onehaohdd:35038] wal.WALFactory: Instantiating WALProvider of type class org.apache.hadoop.hbase.wal.DefaultWALProvider
+2018-04-24 10:37:59,492 INFO  [RS:0;onehaohdd:35038] regionserver.MetricsRegionServerWrapperImpl: Computing regionserver metrics every 5000 milliseconds
+2018-04-24 10:37:59,552 INFO  [RS:0;onehaohdd:35038] regionserver.ReplicationSourceManager: Current list of replicators: [onehaohdd,35038,1524537477191] other RSs: [onehaohdd,35038,1524537477191]
+2018-04-24 10:37:59,713 INFO  [SplitLogWorker-onehaohdd:35038] regionserver.SplitLogWorker: SplitLogWorker onehaohdd,35038,1524537477191 starting
+2018-04-24 10:37:59,721 INFO  [RS:0;onehaohdd:35038] regionserver.HeapMemoryManager: Starting HeapMemoryTuner chore.
+2018-04-24 10:37:59,729 INFO  [RS:0;onehaohdd:35038] regionserver.HRegionServer: Serving as onehaohdd,35038,1524537477191, RpcServer on onehaohdd/127.0.1.1:35038, sessionid=0x162f583b5950001
+2018-04-24 10:37:59,751 INFO  [RS:0;onehaohdd:35038] quotas.RegionServerQuotaManager: Quota support disabled
+2018-04-24 10:38:00,854 INFO  [onehaohdd:34758.activeMasterManager] master.ServerManager: Waiting on RegionServer count=1 to settle; waited=1807ms, expecting min=1 server(s), max=NO_LIMIT server(s), timeout=4500ms, lastChange=-1506ms
+2018-04-24 10:38:02,356 INFO  [onehaohdd:34758.activeMasterManager] master.ServerManager: Waiting on RegionServer count=1 to settle; waited=3309ms, expecting min=1 server(s), max=NO_LIMIT server(s), timeout=4500ms, lastChange=-3008ms
+2018-04-24 10:38:02,775 INFO  [RS:0;onehaohdd:35038] wal.FSHLog: WAL configuration: blocksize=32 MB, rollsize=30.40 MB, prefix=onehaohdd%2C35038%2C1524537477191, suffix=, logDir=file:/home/onehao/soft/hbase-1.4.3/WALs/onehaohdd,35038,1524537477191, archiveDir=file:/home/onehao/soft/hbase-1.4.3/oldWALs
+2018-04-24 10:38:02,805 INFO  [RS:0;onehaohdd:35038] wal.FSHLog: Slow sync cost: 0 ms, current pipeline: []
+2018-04-24 10:38:02,806 INFO  [RS:0;onehaohdd:35038] wal.FSHLog: New WAL /home/onehao/soft/hbase-1.4.3/WALs/onehaohdd,35038,1524537477191/onehaohdd%2C35038%2C1524537477191.1524537482775
+2018-04-24 10:38:03,559 INFO  [onehaohdd:34758.activeMasterManager] master.ServerManager: Finished wait on RegionServer count=1; waited=4512ms, expected min=1 server(s), max=NO_LIMIT server(s), master is running
+2018-04-24 10:38:03,563 INFO  [onehaohdd:34758.activeMasterManager] master.MasterFileSystem: Log folder file:/home/onehao/soft/hbase-1.4.3/WALs/onehaohdd,35038,1524537477191 belongs to an existing region server
+2018-04-24 10:38:04,401 INFO  [onehaohdd:34758.activeMasterManager] zookeeper.MetaTableLocator: Deleting hbase:meta region location in ZooKeeper
+2018-04-24 10:38:04,403 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:delete cxid:0x56 zxid:0x2c txntype:-1 reqpath:n/a Error Path:/hbase/meta-region-server Error:KeeperErrorCode = NoNode for /hbase/meta-region-server
+2018-04-24 10:38:04,461 INFO  [onehaohdd:34758.activeMasterManager] master.AssignmentManager: Setting node as OFFLINED in ZooKeeper for region {ENCODED => 1588230740, NAME => 'hbase:meta,,1', STARTKEY => '', ENDKEY => ''}
+2018-04-24 10:38:04,494 INFO  [onehaohdd:34758.activeMasterManager] zookeeper.ZKTableStateManager: Moving table hbase:meta state from null to ENABLED
+2018-04-24 10:38:04,535 INFO  [onehaohdd:34758.activeMasterManager] master.AssignmentManager: Assigning hbase:meta,,1.1588230740 to onehaohdd,35038,1524537477191
+2018-04-24 10:38:04,536 INFO  [onehaohdd:34758.activeMasterManager] master.RegionStates: Transition {1588230740 state=OFFLINE, ts=1524537484461, server=null} to {1588230740 state=PENDING_OPEN, ts=1524537484535, server=onehaohdd,35038,1524537477191}
+2018-04-24 10:38:04,611 INFO  [RpcServer.priority.FPBQ.Fifo.handler=5,queue=1,port=35038] regionserver.RSRpcServices: Open hbase:meta,,1.1588230740
+2018-04-24 10:38:04,635 INFO  [onehaohdd:34758.activeMasterManager] master.ServerManager: AssignmentManager hasn't finished failover cleanup; waiting
+2018-04-24 10:38:04,646 INFO  [RS_OPEN_META-onehaohdd:35038-0] wal.WALFactory: Instantiating WALProvider of type class org.apache.hadoop.hbase.wal.DefaultWALProvider
+2018-04-24 10:38:04,651 INFO  [RS_OPEN_META-onehaohdd:35038-0] wal.FSHLog: WAL configuration: blocksize=32 MB, rollsize=30.40 MB, prefix=onehaohdd%2C35038%2C1524537477191.meta, suffix=.meta, logDir=file:/home/onehao/soft/hbase-1.4.3/WALs/onehaohdd,35038,1524537477191, archiveDir=file:/home/onehao/soft/hbase-1.4.3/oldWALs
+2018-04-24 10:38:04,656 INFO  [RS_OPEN_META-onehaohdd:35038-0] wal.FSHLog: Slow sync cost: 0 ms, current pipeline: []
+2018-04-24 10:38:04,656 INFO  [RS_OPEN_META-onehaohdd:35038-0] wal.FSHLog: New WAL /home/onehao/soft/hbase-1.4.3/WALs/onehaohdd,35038,1524537477191/onehaohdd%2C35038%2C1524537477191.meta.1524537484654.meta
+2018-04-24 10:38:04,661 INFO  [AM.ZK.Worker-pool5-t1] master.RegionStates: Transition {1588230740 state=PENDING_OPEN, ts=1524537484535, server=onehaohdd,35038,1524537477191} to {1588230740 state=OPENING, ts=1524537484661, server=onehaohdd,35038,1524537477191}
+2018-04-24 10:38:04,790 INFO  [RS_OPEN_META-onehaohdd:35038-0] regionserver.RegionCoprocessorHost: Loaded coprocessor org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint from HTD of hbase:meta successfully.
+2018-04-24 10:38:04,821 INFO  [StoreOpener-1588230740-1] hfile.CacheConfig: Created cacheConfig for info: blockCache=LruBlockCache{blockCount=0, currentSize=595360, freeSize=810897632, maxSize=811492992, heapSize=595360, minSize=770918336, minFactor=0.95, multiSize=385459168, multiFactor=0.5, singleSize=192729584, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2018-04-24 10:38:04,822 INFO  [StoreOpener-1588230740-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2018-04-24 10:38:04,833 INFO  [RS_OPEN_META-onehaohdd:35038-0] regionserver.HRegion: Onlined 1588230740; next sequenceid=3
+2018-04-24 10:38:04,925 INFO  [PostOpenDeployTasks:1588230740] regionserver.HRegionServer: Post open deploy tasks for hbase:meta,,1.1588230740
+2018-04-24 10:38:04,928 INFO  [PostOpenDeployTasks:1588230740] zookeeper.MetaTableLocator: Setting hbase:meta region location in ZooKeeper as onehaohdd,35038,1524537477191
+2018-04-24 10:38:04,941 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950001 type:setData cxid:0x2e zxid:0x31 txntype:-1 reqpath:n/a Error Path:/hbase/meta-region-server Error:KeeperErrorCode = NoNode for /hbase/meta-region-server
+2018-04-24 10:38:04,980 INFO  [AM.ZK.Worker-pool5-t2] master.RegionStates: Transition {1588230740 state=OPENING, ts=1524537484661, server=onehaohdd,35038,1524537477191} to {1588230740 state=OPEN, ts=1524537484980, server=onehaohdd,35038,1524537477191}
+2018-04-24 10:38:04,985 INFO  [AM.ZK.Worker-pool5-t2] coordination.ZkOpenRegionCoordination: Handling OPENED of 1588230740 from onehaohdd,34758,1524537472902; deleting unassigned node
+2018-04-24 10:38:05,006 INFO  [onehaohdd:34758.activeMasterManager] master.HMaster: hbase:meta with replicaId 0 assigned=1, rit=false, location=onehaohdd,35038,1524537477191
+2018-04-24 10:38:05,202 INFO  [onehaohdd:34758.activeMasterManager] hbase.MetaMigrationConvertingToPB: hbase:meta doesn't have any entries to update.
+2018-04-24 10:38:05,202 INFO  [onehaohdd:34758.activeMasterManager] hbase.MetaMigrationConvertingToPB: META already up-to date with PB serialization
+2018-04-24 10:38:05,222 INFO  [onehaohdd:34758.activeMasterManager] master.AssignmentManager: Clean cluster startup. Assigning user regions
+2018-04-24 10:38:05,226 INFO  [onehaohdd:34758.activeMasterManager] master.AssignmentManager: Joined the cluster in 24ms, failover=false
+2018-04-24 10:38:05,243 INFO  [onehaohdd:34758.activeMasterManager] master.TableNamespaceManager: Namespace table not found. Creating...
+2018-04-24 10:38:05,275 INFO  [onehaohdd:34758.activeMasterManager] master.HMaster: Client=null/null create 'hbase:namespace', {NAME => 'info', BLOOMFILTER => 'ROW', VERSIONS => '10', IN_MEMORY => 'true', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', CACHE_DATA_IN_L1 => 'true', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '8192', REPLICATION_SCOPE => '0'}
+2018-04-24 10:38:05,470 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x139 zxid:0x35 txntype:-1 reqpath:n/a Error Path:/hbase/table-lock/hbase:namespace Error:KeeperErrorCode = NoNode for /hbase/table-lock/hbase:namespace
+2018-04-24 10:38:05,624 INFO  [RegionOpenAndInitThread-hbase:namespace-1] regionserver.HRegion: creating HRegion hbase:namespace HTD == 'hbase:namespace', {NAME => 'info', BLOOMFILTER => 'ROW', VERSIONS => '10', IN_MEMORY => 'true', KEEP_DELETED_CELLS => 'FALSE', DATA_BLOCK_ENCODING => 'NONE', TTL => 'FOREVER', COMPRESSION => 'NONE', CACHE_DATA_IN_L1 => 'true', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE => '8192', REPLICATION_SCOPE => '0'} RootDir = file:/home/onehao/soft/hbase-1.4.3/.tmp Table name == hbase:namespace
+2018-04-24 10:38:05,633 INFO  [RegionOpenAndInitThread-hbase:namespace-1] regionserver.HRegion: Closed hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf.
+2018-04-24 10:38:05,933 INFO  [ProcedureExecutor-0] hbase.MetaTableAccessor: Added 1
+2018-04-24 10:38:06,042 INFO  [ProcedureExecutor-0] zookeeper.ZKTableStateManager: Moving table hbase:namespace state from null to ENABLING
+2018-04-24 10:38:06,064 INFO  [ProcedureExecutor-0] master.AssignmentManager: Assigning 1 region(s) to onehaohdd,35038,1524537477191
+2018-04-24 10:38:06,091 INFO  [ProcedureExecutor-0] master.RegionStates: Transition {6a8b78495dccef32c57f5c08d1e15acf state=OFFLINE, ts=1524537486069, server=null} to {6a8b78495dccef32c57f5c08d1e15acf state=PENDING_OPEN, ts=1524537486091, server=onehaohdd,35038,1524537477191}
+2018-04-24 10:38:06,096 INFO  [RpcServer.priority.FPBQ.Fifo.handler=5,queue=1,port=35038] regionserver.RSRpcServices: Open hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf.
+2018-04-24 10:38:06,104 INFO  [ProcedureExecutor-0] zookeeper.ZKTableStateManager: Moving table hbase:namespace state from ENABLING to ENABLED
+2018-04-24 10:38:06,124 INFO  [StoreOpener-6a8b78495dccef32c57f5c08d1e15acf-1] hfile.CacheConfig: Created cacheConfig for info: blockCache=LruBlockCache{blockCount=0, currentSize=595360, freeSize=810897632, maxSize=811492992, heapSize=595360, minSize=770918336, minFactor=0.95, multiSize=385459168, multiFactor=0.5, singleSize=192729584, singleFactor=0.25}, cacheDataOnRead=true, cacheDataOnWrite=false, cacheIndexesOnWrite=false, cacheBloomsOnWrite=false, cacheEvictOnClose=false, cacheDataCompressed=false, prefetchOnOpen=false
+2018-04-24 10:38:06,125 INFO  [StoreOpener-6a8b78495dccef32c57f5c08d1e15acf-1] compactions.CompactionConfiguration: size [134217728, 9223372036854775807, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000; tiered compaction: max_age 9223372036854775807, incoming window min 6, compaction policy for tiered window org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy, single output for minor true, compaction window factory org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory
+2018-04-24 10:38:06,129 INFO  [AM.ZK.Worker-pool5-t5] master.RegionStates: Transition {6a8b78495dccef32c57f5c08d1e15acf state=PENDING_OPEN, ts=1524537486091, server=onehaohdd,35038,1524537477191} to {6a8b78495dccef32c57f5c08d1e15acf state=OPENING, ts=1524537486129, server=onehaohdd,35038,1524537477191}
+2018-04-24 10:38:06,131 INFO  [RS_OPEN_PRIORITY_REGION-onehaohdd:35038-0] regionserver.HRegion: Onlined 6a8b78495dccef32c57f5c08d1e15acf; next sequenceid=2
+2018-04-24 10:38:06,139 INFO  [PostOpenDeployTasks:6a8b78495dccef32c57f5c08d1e15acf] regionserver.HRegionServer: Post open deploy tasks for hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf.
+2018-04-24 10:38:06,152 INFO  [PostOpenDeployTasks:6a8b78495dccef32c57f5c08d1e15acf] hbase.MetaTableAccessor: Updated row hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. with server=onehaohdd,35038,1524537477191
+2018-04-24 10:38:06,164 INFO  [AM.ZK.Worker-pool5-t6] master.RegionStates: Transition {6a8b78495dccef32c57f5c08d1e15acf state=OPENING, ts=1524537486129, server=onehaohdd,35038,1524537477191} to {6a8b78495dccef32c57f5c08d1e15acf state=OPEN, ts=1524537486164, server=onehaohdd,35038,1524537477191}
+2018-04-24 10:38:06,313 INFO  [onehaohdd:34758.activeMasterManager] master.HMaster: Client=null/null creating {NAME => 'default'}
+2018-04-24 10:38:07,100 INFO  [onehaohdd:34758.activeMasterManager] master.HMaster: Client=null/null creating {NAME => 'hbase'}
+2018-04-24 10:38:07,959 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x15d zxid:0x45 txntype:-1 reqpath:n/a Error Path:/hbase/namespace/default Error:KeeperErrorCode = NodeExists for /hbase/namespace/default
+2018-04-24 10:38:07,978 INFO  [ProcessThread(sid:0 cport:2181):] server.PrepRequestProcessor: Got user-level KeeperException when processing sessionid:0x162f583b5950000 type:create cxid:0x160 zxid:0x47 txntype:-1 reqpath:n/a Error Path:/hbase/namespace/hbase Error:KeeperErrorCode = NodeExists for /hbase/namespace/hbase
+2018-04-24 10:38:07,999 INFO  [onehaohdd:34758.activeMasterManager] master.HMaster: Master has completed initialization 10.720sec
+2018-04-24 10:38:08,005 INFO  [onehaohdd:34758.activeMasterManager] quotas.MasterQuotaManager: Quota support disabled
+2018-04-24 10:38:08,007 INFO  [onehaohdd:34758.activeMasterManager] zookeeper.ZooKeeperWatcher: not a secure deployment, proceeding
+2018-04-24 10:38:14,342 INFO  [HBase-Metrics2-1] impl.GlobalMetricRegistriesAdapter: Registering RegionServer,sub=Coprocessor.Region.CP_org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint Metrics about HBase RegionObservers
+2018-04-24 10:41:58,200 INFO  [Idle-Rpc-Conn-Sweeper-pool2-t1] ipc.AbstractRpcClient: Cleanup idle connection to onehaohdd/127.0.1.1:35038
+2018-04-24 10:41:58,213 INFO  [Idle-Rpc-Conn-Sweeper-pool2-t1] ipc.AbstractRpcClient: Cleanup idle connection to onehaohdd/127.0.1.1:35038
+2018-04-24 10:42:57,868 INFO  [LruBlockCacheStatsExecutor] hfile.LruBlockCache: totalSize=581.41 KB, freeSize=773.33 MB, max=773.90 MB, blockCount=0, accesses=0, hits=0, hitRatio=0, cachingAccesses=0, cachingHits=0, cachingHitsRatio=0,evictions=30, evicted=0, evictedPerRun=0.0
+2018-04-24 10:43:09,990 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 136398ms
+2018-04-24 10:43:09,993 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 73799ms
+2018-04-24 10:43:19,616 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 196892ms
+2018-04-24 10:43:19,616 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 109692ms
+2018-04-24 10:43:29,602 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 159903ms
+2018-04-24 10:43:29,602 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 74258ms
+2018-04-24 10:43:39,615 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 110832ms
+2018-04-24 10:43:39,615 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 139304ms
+2018-04-24 10:43:50,520 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 249104ms
+2018-04-24 10:43:50,520 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 298368ms
+2018-04-24 10:44:00,274 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 8268ms
+2018-04-24 10:44:00,274 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 167244ms
+2018-04-24 10:44:09,764 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 158166ms
+2018-04-24 10:44:09,765 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 131941ms
+2018-04-24 10:44:19,712 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 193342ms
+2018-04-24 10:44:19,713 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. because info has an old edit so flush to free WALs after random delay 191727ms
+2018-04-24 10:44:23,797 INFO  [MemStoreFlusher.0] regionserver.HRegion: Flushing 1/1 column families, memstore=248 B
+2018-04-24 10:44:23,943 INFO  [MemStoreFlusher.0] regionserver.DefaultStoreFlusher: Flushed, sequenceid=7, memsize=248, hasBloomFilter=true, into tmp file file:/home/onehao/soft/hbase-1.4.3/data/hbase/namespace/6a8b78495dccef32c57f5c08d1e15acf/.tmp/0f63012f3b114f7c9a189212975cfe3e
+2018-04-24 10:44:24,057 INFO  [MemStoreFlusher.0] regionserver.HStore: Added file:/home/onehao/soft/hbase-1.4.3/data/hbase/namespace/6a8b78495dccef32c57f5c08d1e15acf/info/0f63012f3b114f7c9a189212975cfe3e, entries=2, sequenceid=7, filesize=4.8 K
+2018-04-24 10:44:24,061 INFO  [MemStoreFlusher.0] regionserver.HRegion: Finished memstore flush of ~248 B/248, currentsize=0 B/0 for region hbase:namespace,,1524537485245.6a8b78495dccef32c57f5c08d1e15acf. in 264ms, sequenceid=7, compaction requested=false
+2018-04-24 10:44:29,564 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 132233ms
+2018-04-24 10:44:39,546 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 93540ms
+2018-04-24 10:44:49,571 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 148686ms
+2018-04-24 10:45:00,206 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 92698ms
+2018-04-24 10:45:09,545 INFO  [onehaohdd,35038,1524537477191_ChoreService_1] regionserver.HRegionServer: onehaohdd,35038,1524537477191-MemstoreFlusherChore requesting flush of hbase:meta,,1.1588230740 because info has an old edit so flush to free WALs after random delay 120856ms
